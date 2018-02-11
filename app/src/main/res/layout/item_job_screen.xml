@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:clickable="true"
+    android:orientation="vertical">
+
+<!--
+    android:background="?android:attr/selectableItemBackground"
+-->
+
+   <!-- <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/button_rect_list_normal"
+        android:layout_marginBottom="4dp"/>-->
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/txt_job_title"
+        android:textColor="@color/title"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/txt_salary"
+        android:layout_height="wrap_content"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/txt_qualification"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/txt_job_title"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/year"
+        android:layout_height="wrap_content"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/txt_place"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/txt_qualification"
+        android:layout_below="@+id/txt_job_title"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/year"
+        android:layout_height="wrap_content"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/txt_salary"
+        android:layout_width="wrap_content"
+        android:textColor="@color/year"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content"
+        android:text="000"/>
+
+<!--
+    </RelativeLayout>
+-->
+
+</RelativeLayout>

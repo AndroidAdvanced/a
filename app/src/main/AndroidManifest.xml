@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rupal.a">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/splashScreenTheme">
+
+        <activity
+            android:name=".activities.SplashScreen"
+            android:theme="@style/splashScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activities.SettingsActivity" />
+
+        <activity android:name=".activities.MainActivity" />
+
+        <activity android:name=".activities.Question_Category" />
+
+        <activity android:name=".activities.Question_Exam" />
+
+        <activity android:name=".activities.FeedbackScreen" />
+
+        <activity android:name=".activities.InfoScreen" />
+
+        <activity android:name=".activities.LuckyDraw" />
+
+        <activity android:name=".activities.JobScreen" />
+
+        <activity android:name=".activities.QuestionsActivity" />
+
+        <activity android:name=".activities.ResultActivity" />
+
+        <activity android:name=".activities.LevelScreen" />
+
+        <activity android:name=".activities.ReviewQuestions" />
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".utils.mJobScheduler"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="true"/> // To make service private, make exported true.
+
+    </application>
+
+</manifest>

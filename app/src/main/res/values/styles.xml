@@ -1,0 +1,44 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="splashScreenTheme" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <style name="EditText.Login" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColorHint">@android:color/darker_gray</item>
+        <item name="colorAccent">@color/blue</item>
+        <item name="colorControlNormal">@color/apptheme</item>
+        <item name="colorControlActivated">@color/apptheme</item>
+        <item name="colorControlHighlight">@color/apptheme</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="MyAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">#7f8c8d</item>
+        <item name="android:textColorPrimary">#bdc3c7</item>
+        <item name="android:background">#e74c3c</item>
+    </style>
+
+    <style name="MyAlertDialogStyle2" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">#f1c40f</item>
+        <item name="android:textColorPrimary">#ecf0f1</item>
+        <item name="android:background">#2980b9</item>
+    </style>
+
+
+</resources>

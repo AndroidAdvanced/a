@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/appbarLayout"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/apptheme"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/back"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_feedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/settings"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/white"/>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/txt_setsize"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:text="Text Size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1500000"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.94"
+        android:textSize="16dp"
+        android:textColor="#404040"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/txt_setsizehelp"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:text="Choose default textsize for quiz contents"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2100000"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.94"
+        android:textSize="16dp"
+        android:textColor="@color/apptheme"/>
+
+    <Button
+        android:id="@+id/appCompatImageViewAd"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/a"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintDimensionRatio="H,720:1280"/>
+
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/ic_close_black_24dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.15"
+        android:visibility="gone"
+        app:layout_constraintHorizontal_bias="0.98"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+</android.support.constraint.ConstraintLayout>

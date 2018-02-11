@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:id="@+id/relative_level"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/rounded_border_textview"
+    android:layout_height="wrap_content">
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_height="@dimen/_50sdp"
+        android:layout_alignParentLeft="true"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        app:layout_aspectRatio="200%"
+        app:layout_widthPercent="100%">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/lock_round"
+            android:id="@+id/btn_lock"
+            android:layout_centerInParent="true"
+            app:layout_heightPercent="60%"
+            android:visibility="invisible"
+            app:layout_widthPercent="60%"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/txt_level_percentage"
+            android:textColor="@color/apptheme"
+            android:textSize="25sp"/>
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_toEndOf="@+id/btn_lock"
+            android:layout_toRightOf="@+id/btn_lock">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="1"
+                android:id="@+id/txt_level_number"
+                android:textColor="@color/apptheme"
+                android:textSize="20sp"/>
+
+        </android.support.percent.PercentRelativeLayout>
+
+    </android.support.percent.PercentRelativeLayout>
+
+</android.support.percent.PercentRelativeLayout>
+

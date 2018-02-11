@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_vertical_margin"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imgInfo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/info_out"
+        android:contentDescription="@string/send_feedback" />
+
+    <TextView
+        android:id="@+id/txtQuizSummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgInfo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/quiz_summary"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/relativeMiddle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtQuizSummary">
+
+        <TextView
+            android:id="@+id/txtTotalQuestions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_toLeftOf="@+id/view"
+            android:layout_toStartOf="@+id/view"
+            android:text="@string/total_question"
+            android:textColor="@color/apptheme"
+            android:textSize="16sp"
+            tools:ignore="RelativeOverlap" />
+
+        <TextView
+            android:id="@+id/txtTotalQuestion_Data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTotalQuestions"
+            android:layout_marginEnd="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/view"
+            android:layout_toStartOf="@+id/view"
+            android:textColor="@color/apptheme"
+            android:textSize="20sp"
+            tools:text="10" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="2dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@color/apptheme" />
+
+
+        <TextView
+            android:id="@+id/txtTotalTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/view"
+            android:layout_toRightOf="@+id/view"
+            android:text="@string/total_time"
+            android:textColor="@color/apptheme"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtTotalTime_Data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTotalTime"
+            android:layout_marginLeft="60dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/view"
+            android:layout_toRightOf="@+id/view"
+            android:textColor="@color/apptheme"
+            android:textSize="20sp"
+            tools:text="10" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/txtAttempted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeMiddle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/total_attempted"
+        android:textColor="@color/apptheme"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtAttempted_Data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAttempted"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/apptheme"
+        android:textSize="20sp"
+        tools:text="34" />
+
+    <TextView
+        android:id="@+id/txtCorrect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAttempted_Data"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/answered_right"
+        android:textColor="@color/apptheme"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtCorrect_Data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtCorrect"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/apptheme"
+        android:textSize="20sp"
+        tools:text="5" />
+
+    <Button
+        android:id="@+id/btnReviewQ"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/txtCorrect_Data"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/apptheme"
+        android:text="@string/review_questions"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnLaunchQuiz"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btnReviewQ"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/apptheme"
+        android:text="@string/launch_new_quiz"
+        android:visibility="gone"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLaunchQuiz"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="@string/cancel"
+        android:textColor="@color/apptheme"
+        android:textSize="16sp" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/appCompatImageViewAd"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/a"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintDimensionRatio="H,720:1280"/>
+
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_close_black_24dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.15"
+            android:visibility="gone"
+            app:layout_constraintHorizontal_bias="0.98"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</RelativeLayout>

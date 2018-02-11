@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_main"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:alpha="100">
+
+        <RelativeLayout
+            android:id="@+id/relative_ascending"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="38dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ascending"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="7dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:id="@+id/imgAscending"
+                android:layout_width="4dp"
+                android:background="@color/red"
+                android:layout_height="match_parent"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_qualification"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="@color/white"
+            android:layout_below="@+id/relative_ascending">
+
+
+            <TextView
+                android:id="@+id/txt_qualification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/qualification"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="7dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:id="@+id/imgQualification"
+                android:layout_width="5dp"
+                android:background="@color/red"
+                android:layout_height="match_parent"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_salary"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="@color/white"
+            android:layout_below="@+id/relative_qualification">
+
+            <TextView
+                android:id="@+id/txt_salary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/salary"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:id="@+id/imgSalary"
+                android:layout_width="5dp"
+                android:background="@color/red"
+                android:layout_height="match_parent"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_place"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="@color/white"
+            android:layout_below="@+id/relative_salary">
+
+            <TextView
+                android:id="@+id/txt_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/place"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="7dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:id="@+id/imgPlace"
+                android:layout_width="5dp"
+                android:background="@color/red"
+                android:layout_height="match_parent"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/grey"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

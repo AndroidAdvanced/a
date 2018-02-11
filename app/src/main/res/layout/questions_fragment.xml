@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <android.support.v7.widget.AppCompatTextView
+      android:id="@+id/tv_questions"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/six_dp"
+      android:background="@drawable/layout_bg"
+      android:padding="@dimen/six_dp"
+      android:textColor="@android:color/black"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.0"/>
+
+  <android.support.v7.widget.AppCompatTextView
+      android:id="@+id/tv_answer_1"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/six_dp"
+      android:layout_marginTop="0dp"
+      android:background="@drawable/layout_bg"
+      android:padding="@dimen/six_dp"
+      android:textColor="@android:color/black"
+      android:textSize="15sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tv_questions"
+      app:layout_constraintVertical_bias="0.07999998" />
+
+  <android.support.v7.widget.AppCompatImageView
+      android:id="@+id/tv_answer_1_result"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_margin="@dimen/six_dp"
+      android:adjustViewBounds="false"
+      android:cropToPadding="false"
+      android:src="@drawable/right"
+      android:visibility="invisible"
+      app:layout_constraintBottom_toBottomOf="@+id/tv_answer_1"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="2.97"
+      app:layout_constraintWidth_default="percent"
+      app:layout_constraintWidth_percent="1.6"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/tv_answer_1"
+      app:layout_constraintVertical_bias="0.5"/>
+
+  <android.support.v7.widget.AppCompatTextView
+      android:id="@+id/tv_answer_2"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/six_dp"
+      android:layout_marginTop="0dp"
+      android:background="@drawable/layout_bg"
+      android:padding="@dimen/six_dp"
+      android:textColor="@android:color/black"
+      android:textSize="15sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tv_answer_1"
+      app:layout_constraintVertical_bias="0.110000014"/>
+
+  <android.support.v7.widget.AppCompatImageView
+      android:id="@+id/tv_answer_2_result"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_margin="@dimen/six_dp"
+      android:adjustViewBounds="false"
+      android:cropToPadding="false"
+      android:src="@drawable/right"
+      android:visibility="invisible"
+      app:layout_constraintWidth_default="percent"
+      app:layout_constraintWidth_percent="1.6"
+      app:layout_constraintBottom_toBottomOf="@+id/tv_answer_2"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="2.97"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/tv_answer_2"
+      app:layout_constraintVertical_bias="0.5"/>
+
+  <android.support.v7.widget.AppCompatTextView
+      android:id="@+id/tv_answer_3"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/six_dp"
+      android:layout_marginTop="0dp"
+      android:background="@drawable/layout_bg"
+      android:padding="@dimen/six_dp"
+      android:textColor="@android:color/black"
+      android:textSize="15sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tv_answer_2"
+      app:layout_constraintVertical_bias="0.16000003"/>
+
+  <android.support.v7.widget.AppCompatImageView
+      android:id="@+id/tv_answer_3_result"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_margin="@dimen/six_dp"
+      android:adjustViewBounds="false"
+      android:cropToPadding="false"
+      android:src="@drawable/right"
+      android:visibility="invisible"
+      app:layout_constraintBottom_toBottomOf="@+id/tv_answer_3"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="2.97"
+      app:layout_constraintWidth_default="percent"
+      app:layout_constraintWidth_percent="1.6"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/tv_answer_3"
+      app:layout_constraintVertical_bias="0.5"/>
+
+  <android.support.v7.widget.AppCompatTextView
+      android:id="@+id/tv_answer_4"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/six_dp"
+      android:layout_marginTop="0dp"
+      android:background="@drawable/layout_bg"
+      android:padding="@dimen/six_dp"
+      android:textColor="@android:color/black"
+      android:textSize="15sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tv_answer_3"
+      app:layout_constraintVertical_bias="0.25"/>
+
+  <android.support.v7.widget.AppCompatImageView
+      android:id="@+id/tv_answer_4_result"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_margin="@dimen/six_dp"
+      android:adjustViewBounds="false"
+      android:cropToPadding="false"
+      android:src="@drawable/right"
+      android:visibility="invisible"
+      app:layout_constraintBottom_toBottomOf="@+id/tv_answer_4"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="2.97"
+      app:layout_constraintWidth_default="percent"
+      app:layout_constraintWidth_percent="1.6"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/tv_answer_4"
+      app:layout_constraintVertical_bias="0.5"/>
+
+ <!-- app:layout_constraintBottom_toBottomOf="@+id/tv_answer_4"
+  app:layout_constraintEnd_toEndOf="parent"
+  app:layout_constraintHorizontal_bias="2.97"
+  app:layout_constraintStart_toStartOf="parent"
+  app:layout_constraintTop_toTopOf="@+id/tv_answer_4"
+  app:layout_constraintVertical_bias="0.5"-->
+
+  <!--<android.support.v7.widget.AppCompatImageView
+      android:id="@+id/tv_answer_4_result"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_margin="@dimen/six_dp"
+      android:adjustViewBounds="false"
+      android:cropToPadding="false"
+      android:src="@drawable/right"
+      android:visibility="invisible"
+      app:layout_constraintBottom_toBottomOf="@+id/tv_answer_4"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="2.97"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/tv_answer_4"
+      app:layout_constraintVertical_bias="0.5"/>-->
+
+  <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/alert"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@mipmap/alert_circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_answer_4"
+        android:layout_marginBottom="16dp"/>
+
+</android.support.constraint.ConstraintLayout>

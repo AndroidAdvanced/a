@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin">
+
+    <TextView
+        android:id="@+id/txtQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/title"
+        android:textSize="16dp"
+        android:layout_toLeftOf="@+id/imageRight"
+        android:layout_marginTop="6dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txtAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtQuestion"
+        android:textColor="#008000"
+        android:layout_marginBottom="6dp"
+        android:text="Genre"/>
+
+    <TextView
+        android:id="@+id/txtWrongAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtAnswer"
+        android:textColor="#FF0000"
+        android:visibility="gone"
+        android:layout_marginBottom="6dp"/>
+
+    <ImageView
+        android:id="@+id/imageRight"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/year"/>
+
+</RelativeLayout>
